@@ -20,13 +20,13 @@ document.getElementById("book-form").addEventListener("submit", function (e) {
     newRow.insertCell().textContent = isbn;
 
     const deleteCell = newRow.insertCell();
-    const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "X";
-    deleteBtn.style.color = "red";
+    const delete = document.createElement("button");
+    delete.textContent = "X";
+    delete.style.color = "red";
 
-    deleteCell.appendChild(deleteBtn);
+    deleteCell.appendChild(delete);
 
-    deleteBtn.addEventListener("click", function () {
+    delete.addEventListener("click", function () {
         newRow.remove();
     });
 
