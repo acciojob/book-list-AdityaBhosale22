@@ -23,6 +23,7 @@ document.getElementById("book-form").addEventListener("submit", function (e) {
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "X";
     deleteBtn.style.color = "red";
+	deleteBtn.className = "delete";
 
     deleteCell.appendChild(deleteBtn);
 
